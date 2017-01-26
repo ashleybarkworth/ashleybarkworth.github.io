@@ -69,11 +69,22 @@ hr {
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
+    font-size: 12px;
+    padding: 20px 0;
 }
 
 footer p {
     margin: 0;
     padding: 50px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
 }
 
 @media screen and (min-width:768px) {
