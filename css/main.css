@@ -69,7 +69,7 @@ hr {
 table, th, td {
     padding: 15px;
     text-align: left;
-    float: left;
+    float: right;
 }
 
 footer {
