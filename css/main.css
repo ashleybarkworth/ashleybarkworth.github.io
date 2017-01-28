@@ -72,6 +72,20 @@ table, th, td {
     float: right;
 }
 
+.floatLeft { 
+    width: 50%; 
+    float: left; 
+}
+
+.floatRight {
+    width: 50%; 
+    float: right; 
+}
+
+.container { 
+    overflow: hidden; 
+}
+
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
