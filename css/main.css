@@ -67,23 +67,9 @@ hr {
 }
 
 table, th, td {
-    padding: 15px;
-    text-align: left;
-    float: right;
-}
-
-.floatLeft { 
-    width: 50%; 
-    float: left; 
-}
-
-.floatRight {
-    width: 50%; 
-    float: right; 
-}
-
-.container { 
-    overflow: hidden; 
+  width: 100px;
+  height: 100px;
+  display: inline-block;
 }
 
 footer {
