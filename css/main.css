@@ -72,6 +72,18 @@ table, th, td {
   display: inline-block;
 }
 
+.dropdown-li {
+    display:inline-block !important;
+}
+.dropdown-link {
+    display:inline-block !important; 
+    padding-right:4px !important;
+}
+.dropdown-caret {
+    display:inline-block !important; 
+    padding-left:4px !important;
+}
+
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
