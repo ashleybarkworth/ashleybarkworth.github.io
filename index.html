@@ -532,9 +532,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-3">
+                    <a href="https://github.com/ashleybarkworth" target="_blank"
+                        class="btn btn-primary rounded-pill ">More Projects</a>
+                </div>
                 <!-- Publications -->
                 <h2 class="text-6 text-white font-weight-600 mt-4 mb-3">Publications</h2>
-                <div class="publications text-light-3">
+                <div class="publications text-light-3 mt-3">
                     <a class="text-5 text-white" href="https://www.sciencedirect.com/science/article/pii/S016740482100314X">
                         Ransomware: Recent advances, analysis, challenges and future research directions
                     </a>
@@ -706,6 +710,8 @@
                 colors = json;
                 console.log(colors);
 
+
+
                 $.getJSON(apiRepoUrl + '/repos', function (data) {
                     numProjects = 4;
 
@@ -846,8 +852,10 @@
       .publications {
           background: #050D21;
           border: 1px solid white;
-          border-radius: 25px;
+          border-radius: 15px;
           padding: 1em 1em;
+          /*margin: auto;*/
+          width: 90%;
       }
       p.publications {
           margin-top: 1em;
