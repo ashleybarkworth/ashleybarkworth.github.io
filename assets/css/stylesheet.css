@@ -78,7 +78,7 @@ body {
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: #000;
+    background: #050D21;
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .preloader .lds-ellipsis div:nth-child(1) {
@@ -99,7 +99,7 @@ body {
 }
 
 .preloader.preloader-dark {
-    background-color: #000;
+    background-color: #050D21;
 }
 
 .preloader.preloader-dark .lds-ellipsis div {
