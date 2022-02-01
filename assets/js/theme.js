@@ -277,7 +277,9 @@ $(".player").each(function () {
 /*------------------------
    tooltips
 -------------------------- */
-$('[data-toggle=\'tooltip\']').tooltip({container: 'body'});
+$(document).ready(function() {
+	$("body").tooltip({ 'selector': '[data-toggle=tooltip]' });
+});
 
 /*------------------------
    Scroll to top
