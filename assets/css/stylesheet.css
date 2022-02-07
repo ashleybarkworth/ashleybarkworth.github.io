@@ -155,18 +155,20 @@ img {
 }
 
 a, a:focus {
-    color:  #B46CF8;
+    color: #dee2e6;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-
+    text-decoration: none;
 }
+
+
 
 .github-repo a {
     text-decoration: none;
 }
 
 a:hover, a:active {
-    color: #9056c6;
+    color: #4c4d4d;
     text-decoration: none;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
