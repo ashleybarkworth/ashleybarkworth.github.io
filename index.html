@@ -83,9 +83,9 @@
                 <div class="row">
                   <div class="col-12 text-center">
                     <div class="typed-strings" style="display: none;">
-                        <p>I like <span class="text-primary">cybersecurity</span></p>
-                        <p>I like <span class="text-primary">programming</span></p>
-                        <p>I like <span class="text-primary">solving problems</span></p>
+                        <p>I like <span class="text-secondary">cybersecurity</span></p>
+                        <p>I like <span class="text-secondary">programming</span></p>
+                        <p>I like <span class="text-secondary">solving problems</span></p>
                     </div>
                     <p class="text-7 font-weight-500 text-white mb-2 mb-md-3"> Hi! I'm </p>
                     <h2 class="text-16 font-weight-600 text-white mb-2 mb-md-3">Ashley Barkworth</h2>
@@ -110,7 +110,7 @@
             <!-- Heading end-->
             <div class="row">
                 <div class="col-lg-8 text-lg-left">
-                    <h2 class="text-7 text-white mb-3">Hi, I'm <span class="text-primary">Ashley Barkworth</span>. Nice to meet you!</h2>
+                    <h2 class="text-7 text-white mb-3">Hi, I'm <span class="text-secondary">Ashley Barkworth</span>. Nice to meet you!</h2>
                     <p class="text-light-3 font-weight-400 description">I currently work at Bell Canada, where I develop security applications in the
                         <span class="highlight">Security Operations Centre (SOC)</span>. I recently graduated from the University of New Brunswick with a
                         <span class="highlight">Master of Applied Cybersecurity</span> and
@@ -548,7 +548,7 @@
                     <div class="publications text-light-3 mt-3 mb-3">
                     <h4 class="text-5 text-white">
                         Ransomware: Recent advances, analysis, challenges and future research directions
-                        <a href="https://www.sciencedirect.com/science/article/pii/S016740482100314X" target="_blank"> &nbsp;
+                        <a  href="https://www.sciencedirect.com/science/article/pii/S016740482100314X" target="_blank"> &nbsp;
                             <i class="fas fa-external-link-alt"></i>
                         </a>
                     </h4>
@@ -662,12 +662,12 @@
                     <div class="col-md-5 col-xl-4 order-1 order-md-0 text-center text-md-start">
                         <h2 class="mb-3 text-5 text-white text-uppercase">Contact Details</h2>
                         <p class="text-3 text-light-3 mb-1">
-                            <span class="text-primary text-3 mr-2">
+                            <span class="text-secondary text-3 mr-2">
                                 <i class="fas fa-phone"></i>
                             </span>&nbsp;(778) 257-2554
                         </p>
                         <p class="text-3 text-light-3 mb-4">
-                            <span class="text-primary text-3 mr-2">
+                            <span class="text-secondary text-3 mr-2">
                                 <i class="fas fa-envelope"></i>
                             </span>&nbsp;ashley.barkworth@gmail.com
                         </p>
@@ -897,6 +897,12 @@
       p.stats-component {
           margin-bottom: 0;
       }
+      i.fas.fa-external-link-alt {
+          color: #C9D5EE;
+      }
+      i.fas.fa-external-link-alt:hover {
+          color: #a0aabe;
+      }
       .repo-star-svg {
           margin-right: 0.3rem;
       }
@@ -936,6 +942,15 @@
       }
       img.icon {
           width: 45%;
+      }
+      img.icon:hover {
+          position:relative;
+          top:-5px;
+          left:-15px;
+          width:100px;
+          height:auto;
+          display:block;
+          z-index:800;
       }
       .left-col > figure {
           float: right;
