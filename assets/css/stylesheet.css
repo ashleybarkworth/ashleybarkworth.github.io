@@ -158,19 +158,32 @@ a, a:focus {
     color: #B46CF8;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
+}
+
+a.no-underline, a.no-underline:focus {
+    color: #B46CF8;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     text-decoration: none;
 }
 
 a:hover, a:active {
-    color: #9056c6;
+     color: #9056c6;
+     text-decoration: none;
+     -webkit-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+     text-decoration: none;
+ }
+
+a.btn:active, a.btn:focus, a.btn:disabled {
+    color: #1A67F8;
     text-decoration: none;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
+    text-decoration: none;
 }
 
-i.fas.fa-external-link-alt {
 
-}
 
 a:focus, a:active,
 .btn.active.focus,
@@ -2805,6 +2818,9 @@ hr {
 }
 .social-icons li:hover.social-icons-apple a, .social-icons.social-icons-colored li.social-icons-apple a {
     color: #000;
+}
+.social-icons li:hover.social-icons-pgp a, .social-icons.social-icons-colored li.social-icons-pgp a {
+    color: #720E9E;
 }
 .social-icons.social-icons-colored li:hover a {
     color: #999;
