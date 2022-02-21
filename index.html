@@ -117,22 +117,22 @@
                 <div class="col-lg-8 text-lg-left">
                     <h2 class="text-7 text-white mb-3">Hi, I'm <span class="text-secondary">Ashley Barkworth</span>. Nice to meet you!</h2>
                     <p class="text-light-3 font-weight-400 description">I currently work at Bell Canada, where I develop security applications in the
-                        <span class="highlight">Security Operations Centre (SOC)</span>. I recently graduated from the University of New Brunswick with a
-                        <span class="highlight">Master of Applied Cybersecurity</span> and
-                        <a href="https://www.sciencedirect.com/science/article/pii/S016740482100314X" target="_blank">published a paper</a> on ransomware.
+                         Security Operations Centre (SOC). I recently graduated from the University of New Brunswick with a
+                        Master of Applied Cybersecurity. Before that, I graduated from the University of British Columbia with an honours B.Sc. in computer science
+                        and a minor in mathematics.
                     </p>
-                    <p class="text-light-3 description">I'm interested in <span class="highlight">cybersecurity</span>, <span class="highlight">math</span>,
-                        and <span class="highlight">software development</span>. Check out the rest of my page to see what I've done and to get in touch!</p>
+                    <p class="text-light-3 description">I'm interested in cybersecurity, math, and software development.
+                        Check out my recently published <a href="https://www.sciencedirect.com/science/article/pii/S016740482100314X" target="_blank">paper on ransomware</a>
+                        and check out the rest of my page to get in touch.</p>
                 </div>
                 <div class="col-lg-4 mt-5 mt-lg-0">
                     <div class="pl-4">
-                        <ul class="list-style-2 list-style-light text-light-3">
-                            <li><span class="text-white font-weight-600 mr-2">Name: </span> &nbsp; Ashley Barkworth</li>
-                            <li><span class="text-white font-weight-600 mr-2">Email: </span> &nbsp; <a href="mailto:ashley.barkworth@gmail.com">ashley.barkworth@gmail.com</a></li>
-                            <li><span class="text-white font-weight-600 mr-2">Age: </span> &nbsp; 22</li>
-                            <li class="border-0"><span class="text-white font-weight-600 mr-2">Location: </span> &nbsp; Nanaimo, B.C.</li>
+                        <ul class="list-style-2 list-style-light text-light-3" id="info-list">
+                            <li><i class='fa fa-birthday-cake'></i> &nbsp;<div id="age"></div> years</li>
+                            <li><i class="fa fa-location-arrow"></i>&nbsp; Nanaimo, B.C., Canada</li>
+                            <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:ashley.barkworth@gmail.com">ashley.barkworth@gmail.com</a></li>
                         </ul>
-                        <a href="resume.pdf" target="_blank" class="btn btn-primary rounded-pill ">Download Resume</a>
+                        <a href="files/resume.pdf" target="_blank" class="btn btn-primary rounded-pill ">Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -560,7 +560,7 @@
                         <p class="text-white font-weight-200 mb-1">Craig Beaman, Ashley Barkworth, Toluwalope David Akande, Saqib Hakak, and Muhammad Khurram Khan</p>
                         <p class="text-white font-weight-500">Computers & Security 2021</p>
                         <a class="no-underline text-white font-weight-300" href="https://www.sciencedirect.com/science/article/pii/S016740482100314X" target="_blank">[Paper]</a>
-                        <a class="no-underline text-white font-weight-300" href="publication.pdf" target="_blank">[PDF]</a>
+                        <a class="no-underline text-white font-weight-300" href="files/publication.pdf" target="_blank">[PDF]</a>
                     </div>
                 </div>
                 </div>
@@ -649,7 +649,7 @@
                     </div>
                 </div>
             <div class="text-center mt-5">
-                <a href="resume.pdf" target="_blank" class="btn btn-outline-primary rounded-pill shadow-none">
+                <a href="files/resume.pdf" target="_blank" class="btn btn-outline-primary rounded-pill shadow-none">
                     Download Resume &nbsp;<i class="fas fa-download"></i>
                 </a>
             </div>
@@ -833,6 +833,17 @@
             }); // append to colors
 
         });
+
+        var dob = new Date('04/26/1999 08:36 AM');
+        var timer;
+
+        function age(){
+            var now = new Date();
+            var age = (now.getTime() - dob.getTime()) / (365.25 * 24 * 60 * 60 * 1000);
+            document.getElementById('age').innerHTML = age.toFixed(9)
+        }
+
+        timer = setInterval(age, 3);
     </script>
   </body>
 
@@ -992,6 +1003,8 @@
       i.details-icon {
           color: #aab1b8;
       }
+
+      #info-list div { display:inline }
 
   </style>
 
