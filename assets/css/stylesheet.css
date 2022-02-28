@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Border Radius */
 .rounded-lg {
-    border-radius: 0.6rem !important;
+    border-radius: 0.9rem !important;
 }
 
 .rounded-top-0 {
